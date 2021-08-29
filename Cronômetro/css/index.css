@@ -1,0 +1,50 @@
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    color: #0d448d;
+    -webkit-animation-name: example;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s;
+    /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+    text-align: center;
+    animation-iteration-count: infinite;
+    animation: colorFade 2s infinite ease-out alternate;
+}
+
+@keyframes colorFade {
+    from {
+        background-color: #517fbb
+    }
+    to {
+        background-color: #6d8db6
+    }
+}
+
+p {
+    font-size: 30px;
+}
+
+button {
+    background: #6BA5F2;
+    border-color: #F2F2F2;
+    border-style: solid;
+    border-radius: 40%;
+}
+
+button:hover {
+    background: #ccbbff;
+    box-shadow: 0 9px #999;
+    text-shadow: none;
+    border-radius: 7px;
+}
+
+button:active {
+    background-color: #0D65D9;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
